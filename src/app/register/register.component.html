@@ -1,0 +1,54 @@
+<div class="content">
+
+
+
+    <div class="logo"></div>
+
+    <h1>Data reporting form</h1>
+    <form (ngSubmit)="guardar()" #registerForm="ngForm" class="form-grid">
+  
+      <label for="" class="label">Email:</label>
+      <input type="email" id="email" required [(ngModel)]="register.email" name="email"
+      #ngEmail="ngModel"/>
+    <!--   <div [hidden]="email.valid || email.pristine" class="alert alert-danger">
+        The email is required.
+    </div> -->
+  
+      <label for="" class="label">Url</label>
+      <input type="url" name="url" id="url" required [(ngModel)]="register.url" 
+      #ngUrl="ngModel" />
+  
+      <label for="" class="label">Category</label>
+
+
+
+      <select class="form-control" 
+      id="category" required 
+      [(ngModel)]="register.category" 
+      name="category" 
+      #ngCategory="ngModel">
+        <option *ngFor="let _category of category" [value]="_category">{{_category}}</option>
+     
+    </select>
+  <!--   <div [hidden]="genero.valid || genero.pristine" class="alert alert-danger">
+        El genero es requerido.
+    </div> -->
+
+
+   
+
+
+  
+      <label for="" class="label">Details</label>
+      <textarea name="" id="" cols="30" rows="10" name="details" id="details" required [(ngModel)]="register.details" 
+      #details="ngModel"></textarea>
+  
+      <div class="flex">
+        <input type="checkbox" name="" id="" />
+        <label for="" class="label">I declare that my report requires no urgency</label>
+      </div>
+  
+      <button type="submit">Send repport</button>
+    </form>
+  </div>
+  

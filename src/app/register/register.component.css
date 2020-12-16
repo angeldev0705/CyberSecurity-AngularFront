@@ -1,0 +1,34 @@
+
+
+.content {
+    background-color: white;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 32px;
+
+}
+
+.form-grid {
+    display: grid;
+}
+
+.flex {
+    display: flex;
+}
+
+
+.logo {
+    background-image: url(../../../src/images/logoUNFJS.png);
+height: 200px;
+width: 200px;
+margin: 0 auto;
+background-size: cover;
+}
+button {
+    background: #193b4f;
+    border: none;
+    padding: 15px;
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+}
